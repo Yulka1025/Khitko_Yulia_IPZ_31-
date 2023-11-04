@@ -40,12 +40,8 @@ img {
 
 /*--------------*/
 .header {
-  border-bottom: 1px solid lightgray;
-}
-
-.header_container { 
-   display: flex;
-  align-items: center;
+  border: 1px #ECECEC solid;
+  display: block;
 }
 
 .logo {
@@ -77,11 +73,28 @@ img {
   flex-shrink: 0;
 }
 
-.contact-info > a {
+.header-container { 
+  background-color: var(--white);
+  font-weight: 500;
+  color: #212121;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-info{
   color: var(--grey);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+
 }
 
 .contact-info > a:hover {
@@ -92,32 +105,30 @@ img {
   margin-right: 354px;
 }
 
-.menu_nav {
-  display: flex;
-  column-gap: 50px;
-}
-
 .menu-list {
   color: var(--none_black);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .menu-item:hover {
   color: var(--secondary_color);
 }
 
-.menu_nav,
-.menu_contact {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.28px;
+.menu_nav{
+  display: flex;
+    gap: 50px;
 }
 
 .menu_contact {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+  margin-left: auto;
+  padding: 32px 0;
+  color: #757575;
 }
 
 .menu_list {
@@ -144,7 +155,8 @@ img {
 .contact-tel {
     transition: color 0.3s ease;
     color: var(--main-gray);
-    padding: 32px 0;
+    display: flex;
+    align-items: center;
 }
 /*------------------------*/
 .main-title{
@@ -267,8 +279,7 @@ background: var(--primary_color);
 .team-img{
   width: 270px;
   height: 260px;
-  border: 1px solid #ccc;
- /* border-radius: 50%;*/
+  border: 1px solid var(--white);
 }
 .team-role{
   padding: 30px 15px 30px 15px;
@@ -374,7 +385,8 @@ footer {
     gap: 30px;
     grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 1fr);
-    padding-bottom: 94px; 
+    padding-bottom: 94px;
+     
 }
 .project-name {
     color: var(--black);
@@ -393,9 +405,14 @@ footer {
     text-align: center;
     font-weight: 400;
 }
+.project-img{
+  width: 370px;
+height: 294px;
+flex-shrink: 0;
+border: 1px solid var(--white);
+}
 * {
-    /* padding: 0;
-    margin: 0; */
+    margin: 0;
     box-sizing: border-box;
     border: none;
     text-decoration: none;
