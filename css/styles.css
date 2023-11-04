@@ -8,6 +8,16 @@
   --none_white: #f5f4fa;
 }
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
 html {
   font-family: var(--dominant-font);
   box-sizing: border-box;
@@ -41,14 +51,19 @@ img {
 /*--------------*/
 .header {
   border: 1px #ECECEC solid;
-  display: block;
 }
 
-.logo {
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
   margin-right: 93px;
+  padding: 25px 0px;  
 }
 
-.logo-black,
+.header__logo,
 .logo-white {
   color: var(--secondary_color);
   font-family: "Raleway", sans-serif;;
@@ -57,9 +72,8 @@ img {
   letter-spacing: 0.78px;
 }
 
-.logo-black > span {
+.header__logo > span {
   color: var(--black);
-  padding: 25px 0px 25px 0px;  
 }
 
 .logo-white > span {
@@ -68,17 +82,11 @@ img {
 
 .header__title {
   background: var(--primary_color);
-  width: 1600px;
   height: 600px;
   flex-shrink: 0;
 }
 
-.header-container { 
-  background-color: var(--white);
-  font-weight: 500;
-  color: #212121;
-  display: flex;
-  align-items: center;
+.container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -102,7 +110,7 @@ img {
 }
 
 .menu {
-  margin-right: 354px;
+  margin-right: auto;
 }
 
 .menu-list {
@@ -110,8 +118,6 @@ img {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
-  margin-right: 20px;
-  margin-left: 20px;
 }
 
 .menu-item:hover {
@@ -127,7 +133,6 @@ img {
   display: flex;
   gap: 40px;
   margin-left: auto;
-  padding: 32px 0;
   color: #757575;
 }
 
@@ -268,7 +273,7 @@ background: var(--primary_color);
   display: flex;
   justify-content: space-around;
   list-style: none;
-  padding: 0;
+  gap: 30px;
 }
 .team-card{
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -283,7 +288,6 @@ background: var(--primary_color);
 }
 .team-role{
   padding: 30px 15px 30px 15px;
-  margin-top: 10px;
 }
 .team-name {
   color: var(--none_black);
@@ -317,7 +321,7 @@ background: var(--primary_color);
 .footer-menu {
     display: flex;
     flex-direction: column;
-    /* row-gap: 12px; */
+    gap: 12px;
 }
 .city {
   color: var(--white);
@@ -334,7 +338,6 @@ background: var(--primary_color);
   letter-spacing: 0.28px;
   font-style: normal;
 }
-
 .contact-footer:hover {
     color: var(--main-blue);
 }
@@ -411,15 +414,5 @@ height: 294px;
 flex-shrink: 0;
 border: 1px solid var(--white);
 }
-* {
-    margin: 0;
-    box-sizing: border-box;
-    border: none;
-    text-decoration: none;
-}
 
-/*{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 15px 0 15px;
-}*/
+
