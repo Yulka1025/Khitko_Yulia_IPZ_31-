@@ -366,8 +366,6 @@ background: var(--primary_color);
   letter-spacing: 0.48px;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 5px;
-  font-family: "Roboto";
-  padding: 6px 22px 6px 22px;
 }
 
     
@@ -380,9 +378,6 @@ background: var(--primary_color);
   border-radius: 4px;
 }
 
-footer {
-  background: var(--primary_color);
-}
 .projects__list{
   display: grid;
     gap: 30px;
