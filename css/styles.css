@@ -108,6 +108,10 @@ img {
 .contact-info > a:hover {
   color: var(--secondary_color);
 }
+.contact-email,
+.contact-tel{
+  color: var(--grey);
+}
 
 .menu {
   margin-right: auto;
@@ -133,7 +137,7 @@ img {
   display: flex;
   gap: 40px;
   margin-left: auto;
-  color: #757575;
+  color: var(--grey);
 }
 
 .menu_list {
@@ -156,10 +160,9 @@ img {
 .active {
   color: var(--secondary_color);
 }
-.contact-email,
-.contact-tel {
+.contact-info{
     transition: color 0.3s ease;
-    color: var(--main-gray);
+    color: var(--grey);
     display: flex;
     align-items: center;
 }
@@ -241,7 +244,7 @@ background: var(--primary_color);
     height: auto;
 }
 
-.header-secondary-work {
+.header_secondary {
   color: var(--none_black);
   text-align: center;
   font-size: 36px;
@@ -259,8 +262,6 @@ background: var(--primary_color);
   background: var(--none_white);
   padding: 94px 0;
 }
-
-
 
 .header-secondary-team{
   display: flex;
@@ -290,23 +291,26 @@ background: var(--primary_color);
   padding: 30px 15px 30px 15px;
 }
 .team-name {
-  color: var(--none_black);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.48px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  margin: 0;
+  color: #212121;
+
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.48px;
+padding-bottom: 10px;
 }
 .team-job {
-  color: var(--grey);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.48px;
-  font-size: 1rem;
-  margin: 0;
+  color: #757575;
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.48px;
 }
 
 /*------------------------------*/
@@ -339,7 +343,7 @@ background: var(--primary_color);
   font-style: normal;
 }
 .contact-footer:hover {
-    color: var(--main-blue);
+    color: var(--secondary_color);
 }
 /*---------------------------------*/
 
@@ -386,13 +390,17 @@ background: var(--primary_color);
     padding-bottom: 94px;
      
 }
+.project_list_item{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
 .project-name {
     color: var(--black);
     font-size: 18px;
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
-    text-align: center;
     margin-bottom: 4px;
 }
 .project-description {
@@ -400,7 +408,6 @@ background: var(--primary_color);
     font-size: 16px;
     line-height: 187.5%;
     letter-spacing: 0.48px;
-    text-align: center;
     font-weight: 400;
 }
 .project-img{
@@ -408,6 +415,10 @@ background: var(--primary_color);
 height: 294px;
 flex-shrink: 0;
 border: 1px solid var(--white);
+}
+.project_card{
+  border: 1px solid #EEE;
+  background: #FFF;
 }
 
 
