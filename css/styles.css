@@ -113,9 +113,6 @@ img {
   color: var(--grey);
 }
 
-.menu {
-  margin-right: auto;
-}
 
 .menu-list {
   color: var(--none_black);
@@ -263,13 +260,7 @@ background: var(--primary_color);
   padding: 94px 0;
 }
 
-.header-secondary-team{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
+
 .team__list {
   display: flex;
   justify-content: space-around;
@@ -353,7 +344,6 @@ letter-spacing: 0.48px;
     align-items: center;
     gap: 8px; 
     flex-wrap: wrap;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .filter-list__item {
@@ -380,6 +370,11 @@ letter-spacing: 0.48px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease; 
   border-radius: 4px;
+}
+
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .projects__list{
