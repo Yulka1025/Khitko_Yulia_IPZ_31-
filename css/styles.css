@@ -103,7 +103,6 @@ img {
   display: flex;
   gap: 40px;
   margin-left: auto;
-
 }
 
 .contact-info > a:hover
@@ -411,14 +410,15 @@ letter-spacing: 0.48px;
   width: 370px;
 height: 294px;
 flex-shrink: 0;
-border: 1px solid var(--white);
 }
 .project_card{
   border: 1px solid #EEE;
   background: #FFF;
 }
-.project_card:hover{
+.project_card:hover
+.project-card:focus{
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
 }
 
 /*------------icon----------------------*/
@@ -447,11 +447,15 @@ border: 1px solid var(--white);
 .main_icon_social{
   fill: var(--white);
 }
-.social_icon:hover{
+.social_icon:hover
+.social_icon:focus{
   background-color: var(--secondary_color);
+  transition: color 0.3s ease;
 }
-.social:hover{
+.social:hover
+.social:focus{
   fill: #FFF;
+  transition: color 0.3s ease;
 }
 .main_icon_social .social_icon:hover svg,                                          
 .main_icon_social .social_icon:hover .social,
@@ -466,7 +470,6 @@ border: 1px solid var(--white);
 }
 .clients-list{
   display: flex ;
-  margin-top: 50px;
 }
 .clients{
   padding: 94px 0;
@@ -480,15 +483,20 @@ border: 1px solid var(--white);
   border-radius: 4px;
   border: 1px solid #AFB1B8;
 }
+
 .clients-list :not(:last-child){
   margin-right: 30px;
 }
 
-.icon-client:hover{
+.icon-client:hover
+.icon-client:focus{
   fill: #2196f3;
+  transition: color 0.3s ease;
 }
-.clients-item:hover{
+.clients-item:hover
+.clients-item:focus{
   border: 1px solid #2196f3;
+  transition: color 0.3s ease;
 }
 .clients-list .clients-item:hover svg,                                          
 .clients-list .clients-item:hover .icon-client,
@@ -529,18 +537,23 @@ margin-bottom: 20px;
 }
 .container-footer{
   display: flex;
+  align-items: baseline;
 }
 .contact-t{
   display: flex;
   gap: 10px;
   color: #757575;
+  letter-spacing: 0.42px;
+  align-items: center;
 }
 .contact-t:hover 
 .icon_contact{
   fill: #2196f3;
 }
-.contact-t:hover{
+.contact-t:hover
+.contact-t:focus{
   color: #2196f3;
+  transition: color 0.3s ease;
 }
 .icon-details{
   width: 70px;
@@ -557,3 +570,4 @@ margin-bottom: 30px;
 .icon-details :not(:last-child){
   margin right: 30px;
 }
+
