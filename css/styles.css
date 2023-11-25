@@ -496,8 +496,8 @@ flex-shrink: 0;
   margin-right: 30px;
 }
 
-.clients-item:hover,
-.clients-item:focus
+.clients-item:hover a,
+.clients-item:focus a
 {
   fill: #2196f3;
    border: 1px solid #2196f3;
