@@ -14,4 +14,11 @@
     refs.closeModalBtn.addEventListener("click", () => {
         refs.modal.classList.add("is-hidden");
     });
+   
+    
 })();
+
+document.getElementById('svgCheckbox').addEventListener('click', function() {
+    console.log('ok')
+    this.classList.toggle('active');
+});
