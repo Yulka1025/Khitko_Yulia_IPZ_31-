@@ -1,0 +1,125 @@
+.projects__filter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .projects__filter-item {
+    border-radius: 100px;
+    background: var(--none_white);
+  }
+  
+  .projects__filter-button {
+    color: var(--none_black);
+    text-align: center;
+    padding: 6px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 162.5%;
+    letter-spacing: 0.48px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  
+  .projects__filter-button:hover,
+  .projects__filter-button:focus {
+    background-color: var(--secondary_color);
+    color: var(--white);
+    scale: 1.2;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .projects__list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(3, 1fr);
+  
+  
+  }
+  
+  .projects__info {
+    padding: 20px 24px;
+  }
+  
+  .project__name {
+    color: var(--none_black);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 1.08px;
+    margin-bottom: 4px;
+  }
+  
+  .project__description {
+    color: var(--grey);
+    font-size: 16px;
+    line-height: 187.5%;
+    letter-spacing: 0.48px;
+  
+  }
+  
+  .project__img {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+  }
+  
+  .projects__image-container {
+    overflow: hidden;
+  }
+  
+  .projects__card {
+    border: 1px solid #EEE;
+    background: #FFF;
+    transition: color 0.3s ease;
+  }
+  
+  .projects__card:hover,
+  .projects__card:focus {
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+  
+  }
+  .projects__overlay-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .projects__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateY(101%);
+    transition: transform 250ms ease;
+    opacity: 1;
+    background: rgba(33, 150, 243, 0.90);
+    padding: 0px 24px;
+  }
+  
+  .projects__card:hover .projects__overlay {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .projects__overlay-text {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    line-height: 1.55;
+  }
